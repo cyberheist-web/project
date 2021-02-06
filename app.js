@@ -530,7 +530,7 @@ async function list_all_websites() {
 }
 
 var server_host = process.env.YOUR_HOST || 'localhost';
-var server_port = process.env.PORT || 23755;
+var server_port = process.env.PORT || 3000;
 
 if (argv.grid != "") {
   helper.grid_url = argv.grid
