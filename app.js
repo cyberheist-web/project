@@ -529,7 +529,7 @@ async function list_all_websites() {
   console.log('[Listing] Available websites\n' + temp_arr.join('\n'))
 }
 
-var server_host = '0.0.0.0';
+var server_host = process.env.YOUR_HOST || 'localhost';
 var server_port = process.env.PORT || 23755;
 
 if (argv.grid != "") {
@@ -548,6 +548,6 @@ if (argv.cli) {
   }
 } else {
   var server = app.listen(server_port, server_host, function() {
-    console.log("Server started at http://%s:%s/public/app.html", server_host, server_port);
+    console.log("Server started at http://%s:%s/app.html", server_host, server_port);
   });
 }
