@@ -548,6 +548,6 @@ if (argv.cli) {
   }
 } else {
   var server = app.listen(server_port, server_host, function() {
-    console.log("Server started at http://%s:%s/app.html", server_host, server_port);
+    console.log("Server started at http://%s:%s/public/app.html", server_host, server_port);
   });
 }
